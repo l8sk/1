@@ -117,7 +117,7 @@ class qredes:
                 for users in self.search1(keyword)['user_list']:
                     username=users['user_info']['unique_id']
                     follower_count=users['user_info']['follower_count']
-                    if follower_count > 499:
+                    if follower_count > 199:
                         if '_' not in username:
                             if username not in self.list:
                                 if 5 < len(username):
@@ -260,7 +260,7 @@ class qredes:
                     },
                     'time_get_tokens':tm,
                     'time':time(),
-                    'by':'@Qredes - https://t.me/Qredes_Tools'
+                    'by':'@kckkkkc'
                         },
                 'errors':[],
             }
@@ -271,7 +271,7 @@ class qredes:
 
                 },
                 'info':{
-                    'by':'@Qredes - https://t.me/Qredes_Tools',
+                    'by':'@kckkkkc',
                     'time':time(),
                     'time_get_tokens':tm,
                 },
@@ -449,37 +449,24 @@ class qredes:
       self.hits.append(username)
       inf=self.information(username)
       ff = (f'''
-
-    𝐇𝐈𝐓 𝐀𝐂𝐂𝐎𝐔𝐍𝐓 𝐓𝐈𝐊𝐓𝐎𝐊
-    ═══════════════════
-    𝑷𝑹𝑶𝑮𝑹𝑨𝑴 : @d_dwu | @Qredes
-    ═══════════════════
-    𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴 : {username}
-    𝙶𝙼𝙰𝙸𝙻 : {username}@gmail.com
-    𝙵𝙾𝙻𝙻𝙾𝚆𝙴𝚁𝚂 : {inf['followers']}
-    𝙵𝙾𝙻𝙻𝙾𝙸𝙽𝙶 : {inf['following']}
-    𝙻𝙸𝙺𝙴 : {inf['like']}
-    𝙸𝙳 : {inf['id']}
-    𝙿𝚁𝙸𝚅𝙰𝚃𝙴 : {inf['private']}
-    𝚅𝙴𝙳𝙾 : {inf['video']}
-    𝙲𝙾𝚄𝙽𝚃𝚁𝚈 𝙽𝙰𝙼𝙴 : {inf['country_name']}
-    𝙵𝙻𝙰𝙶 : {inf['flag']}
-    𝙽𝙰𝙼𝙴 : {inf['name']}
-    𝙱𝙸𝙾 : {inf['bio']}
-    ═══════════════════
-
+New clime
+username : {username}
+email : {username}@gmail.com
+followers : {inf['followers']}
+following : {inf['following']}
+like : {inf['like']}
+id : {inf['id']}
+private : {inf['private']}
+video : {inf['video']}
+country : {inf['country_name']}
+flag : {inf['flag']}
+name : {inf['name']}
+bio : {inf['bio']}
      ''')
     except:
       ff=f'''
-
-      𝐇𝐈𝐓 𝐀𝐂𝐂𝐎𝐔𝐍𝐓 𝐓𝐈𝐊𝐓𝐎𝐊
-      ═══════════════════
-      𝑷𝑹𝑶𝑮𝑹𝑨𝑴 : @d_dwu | @Qredes
-      ═══════════════════
-      𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴 : {username}
-      𝙶𝙼𝙰𝙸𝙻 : {username}@gmail.com
-      ═══════════════════
-
+      username : {username}
+      email : {username}@gmail.com
       '''
     while True:
       try:
@@ -566,7 +553,7 @@ class qredes:
                 "bio": bio,
                 "country_name": country_name,
                 "flag":flag,
-                "BY": "@g_4_q"
+                "BY": "@kckkkkc"
             }
         except:
           return {                                    
@@ -581,7 +568,7 @@ class qredes:
               "bio": '',
               "country_name": "",
               "flag":"",
-              "BY": "@g_4_q"
+              "BY": "@kckkkkc"
           }
     except :
         return {                                    
@@ -596,7 +583,7 @@ class qredes:
               "bio": '',
               "country_name": "",
               "flag":"",
-              "BY": "@g_4_q"
+              "BY": "@kckkkkc"
           }
   def get_following(self,username,id):
       while True:

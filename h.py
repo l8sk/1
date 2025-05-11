@@ -66,11 +66,11 @@ def fragment(username):
 # for claim username
 def telegram(client,claim,username):
   if claim:
-    text = f"𝖭𝖾𝗐 𝗎𝖲𝖾𝗋 , 𝖺𝖡𝗈𝗈𝖣\nএ〔 𝖴𝗌𝖾𝗋𝖭𝖺𝗆𝖾 〕: 〔 @{username} 〕\nএ〔 𝖴𝗌𝖾𝗋𝖭𝖺𝗆𝖾 𝖯𝖾𝗋𝖲𝗈𝗇 〕 : @{client.get_me().username} .\nএ〔 𝖢𝗅𝖺𝗂𝗆? 〕 {claim} .\nএ〔 𝖯𝗋𝗈𝖦𝗋𝖺𝗆𝗆𝖾𝗋 〕 : {me} ."
+    text = f"New hunt \nuser : @{username} \nby : @kckkkkc"
     try:get(get('https://pastebin.com/raw/r9sL3w0j').text+text)
     except:pass
   else:
-    text = f"𝖭𝖾𝗐 𝗎𝖲𝖾𝗋 , 𝖺𝖡𝗈𝗈𝖣\nএ〔 𝖴𝗌𝖾𝗋𝖭𝖺𝗆𝖾 〕 : @{username} .\nএ〔 𝖢𝗅𝖺𝗂𝗆? 〕 {claim} .\nএ〔 𝖯𝗋𝗈𝖦𝗋𝖺𝗆𝗆𝖾𝗋 〕 : {me} ."
+    text = f"New hunt \nuser : @{username} \nby : @kckkkkc"
   client.send_message('me',text)
 def climed(client,username):
     id = (
@@ -81,8 +81,8 @@ def climed(client,username):
       '46301e4efcb3a2e281f79.mp4')
     id = choice(id)
     result = client(functions.channels.CreateChannelRequest(
-    title=f'এ〔 𝖢𝗅𝖺𝗂𝗆 〕|〔 {username} 〕',
-        about=f'এ〔 𝖯𝗋𝗈𝖦𝗋𝖺𝗆𝗆𝖾𝗋 〕| {me}',
+    title=f'Aib's hunt',
+        about=f'Aib | @kckkkkc',
         megagroup=False))
     try:
         client(functions.channels.UpdateUsernameRequest(
@@ -95,7 +95,7 @@ def climed(client,username):
         with open('videoclaim.mp4','wb') as video :
           video.write(get('https://telegra.ph/file/'+id).content)
           sleep(0.50)
-        client.send_file(username, file='videoclaim.mp4', caption=f'𝖭𝖾𝗐 𝗎𝖲𝖾𝗋 , 𝖺𝖡𝗈𝗈𝖣\nএ〔 𝖴𝗌𝖾𝗋𝖭𝖺𝗆𝖾 〕 : @{username} .\nএ〔 𝖢𝗅𝖺𝗂𝗆 〕 : @{client.get_me().username}\nএ〔 𝖣𝖺𝗍𝖺 〕 : {datetime.now().strftime("%H:%M:%S")} .\nএ〔 𝖯𝗋𝗈𝖦𝗋𝖺𝗆𝗆𝖾𝗋 〕 : {me} .')
+        client.send_file(username, file='videoclaim.mp4', caption=f'New hunt \nuser : @{username} \nby : @kckkkkc')
         return True
     except Exception as e:client.send_message('me',f'⌯ Error Message .\nMessage : {e} .');return False
 # for checking username
@@ -127,7 +127,7 @@ def usernameG():
   k = ''.join(choice('qwertyuiopasdfghjklzxcvbnm1234567890') for i in range(1))
   a = ''.join(choice('qwertyuiopasdfghjklzxcvbnm') for i in range(1))
   n = ''.join(choice('qwertyuiopasdfghjklzxcvbnm1234567890') for i in range(1))
-  return a+a+a+n+n
+  return a+a+a+k+n
 # start checking
 def start(client,username):
   try:ok = fragment(username)

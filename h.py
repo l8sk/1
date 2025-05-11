@@ -81,7 +81,7 @@ def climed(client,username):
       '46301e4efcb3a2e281f79.mp4')
     id = choice(id)
     result = client(functions.channels.CreateChannelRequest(
-    title=f'Aib's hunt',
+    title=f'Aib got a hunt',
         about=f'Aib | @kckkkkc',
         megagroup=False))
     try:
